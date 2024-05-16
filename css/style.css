@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    display: block;
+    margin-left: 32%;
+  }
+
+  
+  ul li {
+    cursor: pointer;
+    margin-top: 15px;
+    position: relative;
+    padding: 12px 8px 3px 40px;
+    list-style-type: none;
+    background: #59ad29;
+    color: #130707;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+  }
+ 
+  ul li:nth-child(odd) {
+    background: #59ad29;
+  }
+ 
+  ul li:hover {
+    background: #508f44;
+  }
+ 
+  ul li.checked {
+    background: #448032;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Ajout de trait quand c'est checked */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+
+  p {
+    font-size: 15px;
+    color: #000;
+    margin-left: 32%;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    color: rgb(10, 10, 10);
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: rgba(10, 100, 10, 0.5);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  input {
+    margin: 0;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 30%;
+    padding: 10px;
+    float: left;
+    margin-left: 30%;
+    font-size: 16px;
+    outline: none;
+  }
+ 
+  .addBtn {
+    padding: 10px;
+    width: 15%;
+    background: #5f9967;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .addBtn:hover {
+    background-color: #29d41a;
+  }
